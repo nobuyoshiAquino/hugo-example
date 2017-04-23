@@ -5,13 +5,13 @@ backend:
   site_domain: hugo-example.netlify.com # Your Netlify site address if different from host
 
 publish_mode: editorial_workflow
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+media_folder: "site/static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "blog" # Used in routes, e.g. /admin/collections/blog
     label: "Blog" # Used in the UI
-    folder: "content/post" # The path to the folder where the documents are stored
+    folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
